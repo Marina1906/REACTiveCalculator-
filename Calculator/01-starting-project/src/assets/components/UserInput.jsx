@@ -11,6 +11,15 @@ const [UserInput, setUserInput] =useState({
 
 });
 
+function handleChange (inputIdentifier, newValue) {
+    setUserInput(prevUserInput => {
+        return {
+            ...prevUserInput,
+            [inputIdentifier]:newValue
+        };
+    });
+}
+
   return (
     <section id="user-input">
       <div className="input-group">
