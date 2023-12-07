@@ -1,4 +1,4 @@
-import Header from "./assets/components/Header"
+import Header from "./assets/components/Header.jsx"
 
 function App() {
   return (
