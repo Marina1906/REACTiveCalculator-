@@ -25,7 +25,12 @@ function handleChange (inputIdentifier, newValue) {
       <div className="input-group">
         <p>
           <label>Initial Investment</label>
-          <input type="number" required />
+          <input type="number" required
+          value={UserInput.initialInvestment}
+          onChange={(event) =>
+          handleChange('initialInvestment', event.target.value)
+          } 
+          />
         </p>
         <p>
           <label>Annual Investment</label>
